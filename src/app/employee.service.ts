@@ -33,8 +33,6 @@ export class EmployeeService {
 
 
   errorHandler(error: HttpErrorResponse){
-    console.log(error)
-
     return throwError(error.message || 'Server Error')
   }
 }
