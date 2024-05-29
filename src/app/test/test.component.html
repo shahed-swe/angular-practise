@@ -1,3 +1,11 @@
 <p>
   test works! Here is the title {{title}}
 </p>
+<button (click)="onClick($event)">Greet</button>
+
+<h1>{{greeting}}</h1>
+<button (click)="greeting='Welcome Shahed'">Greet</button>
+
+<br/>
+<input #myInput type="text" />
+<button (click)="logMessage(myInput)">Log</button>

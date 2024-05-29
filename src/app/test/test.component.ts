@@ -12,4 +12,14 @@ export class TestComponent implements OnInit {
   ngOnInit() {
   }
   title="Test Page"
+  public greeting = ""
+
+  onClick(event){
+    this.title = "Page 2"
+    console.log(event)
+  }
+
+  logMessage(value){
+    console.log(value.value)
+  }
 }
