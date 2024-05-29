@@ -9,6 +9,7 @@ import { Test4Component } from './test4/test4.component';
 import { Test5Component } from './test5/test5.component';
 import { TwowayComponent } from './twoway/twoway.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { CinteractComponent } from './cinteract/cinteract.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DirectivesComponent } from './directives/directives.component';
     Test4Component,
     Test5Component,
     TwowayComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    CinteractComponent
   ],
   imports: [
     BrowserModule,
