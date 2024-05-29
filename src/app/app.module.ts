@@ -11,6 +11,9 @@ import { TwowayComponent } from './twoway/twoway.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { CinteractComponent } from './cinteract/cinteract.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { ServicesComponent } from './services/services.component';
+import { EmployeeService } from './employee.service';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -23,13 +26,15 @@ import { PipesComponent } from './pipes/pipes.component';
     TwowayComponent,
     DirectivesComponent,
     CinteractComponent,
-    PipesComponent
+    PipesComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
