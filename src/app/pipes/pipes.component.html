@@ -1,0 +1,35 @@
+<p>
+  pipes works!
+</p>
+
+
+<h1>
+  {{person.firstName | lowercase}}
+</h1>
+<h1>
+  {{person.lastname | uppercase}}
+</h1>
+<h1>
+  {{person.firstName | titlecase}}
+</h1>
+<h1>
+  {{message | slice:3:12}}
+</h1>
+
+<h1>{{person | json}}</h1>
+
+<h2>{{5.678 | number: '1.2-3'}}</h2>
+<h2>{{5.678 | number: '3.4-5'}}</h2>
+<h2>{{5.678 | number: '3.1-2'}}</h2>
+<!-- here in number (1.2-3) here 1 represents the minimum number of normal digit and after . 2-3 represents the minimum number of deccimal digits -->
+<h2>{{.1 | percent}}</h2>
+<h2>{{2.10 | currency}}</h2>
+<h2>{{2.10 | currency: 'GBP'}}</h2>
+<!-- <h2>{{2.10 | currency:"BDT":"symbol"}}</h2> - this will be the custom one but need custom currency  -->
+
+<h2>{{date}}</h2>
+<h2>{{date | date: 'short'}}</h2>
+<h2>{{date | date: 'shortDate'}}</h2>
+<h2>{{date | date: 'shortTime'}}</h2>
+<h2>{{date | date: 'mediumDate'}}</h2>
+<h2>{{date | date: 'mediumTime'}}</h2>

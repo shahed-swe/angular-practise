@@ -10,6 +10,7 @@ import { Test5Component } from './test5/test5.component';
 import { TwowayComponent } from './twoway/twoway.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { CinteractComponent } from './cinteract/cinteract.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CinteractComponent } from './cinteract/cinteract.component';
     Test5Component,
     TwowayComponent,
     DirectivesComponent,
-    CinteractComponent
+    CinteractComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
