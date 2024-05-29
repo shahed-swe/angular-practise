@@ -13,7 +13,7 @@ import { IEmployee } from '../model/employee';
 })
 export class Test3Component implements OnInit {
   public employees: IEmployee[] = []
-
+  public errorMsg;
   // public employess = [
   //   { "id": 1, "name": "Andrew", "age": 30 },
   //   { "id": 2, "name": "Mickle", "age": 35 },
@@ -25,7 +25,9 @@ export class Test3Component implements OnInit {
 
   ngOnInit() {
     this._employeeService.getEmployees()
-      .subscribe(res => this.employees = res)
+      .subscribe(res => this.employees = res,
+        error => this.errorMsg = error
+      )
   }
 
 }

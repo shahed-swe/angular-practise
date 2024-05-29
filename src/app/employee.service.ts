@@ -22,6 +22,7 @@ export class EmployeeService {
   constructor(private http:HttpClient) { }
 
   private _url: string = "/assets/data/employess.json"
+  // private _url: string = "/assets/data/employess1.json" -> to check the data
 
   getEmployees(): Observable<IEmployee[]>{
     return this.http.get<IEmployee[]>(this._url)
