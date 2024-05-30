@@ -1,7 +1,20 @@
 <p>
-  departmentdetail works! =  {{departmentId}}
+  departmentdetail works! = {{departmentId}}
 </p>
-<a (click)="goPrev()">Previous</a>
-<a (click)="goNext()">Next</a>
-<br/>
+
+<p>
+  <router-outlet></router-outlet>
+</p>
+
+<p>
+    <button (click)="departmentOverview()">Overview</button>
+    <button (click)="departmentContact()">Contact</button>
+</p>
+
+<p>
+  <button (click)="goPrev()">Previous</button>
+  <button (click)="goNext()">Next</button>
+</p>
+
+<br />
 <button (click)="goToDepartment()">Back</button>
